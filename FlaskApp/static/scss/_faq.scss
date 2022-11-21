@@ -1,0 +1,164 @@
+/*======================================
+    Faq CSS
+========================================*/
+.faq {
+    padding-bottom: 80px;
+
+    @media #{$md} {
+        padding-bottom: 40px;
+    }
+
+    @media #{$xs} {
+        padding-bottom: 30px;
+    }
+
+    .section-title {
+        @media #{$md} {
+            margin-bottom: 50px;
+        }
+
+        @media #{$xs} {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-right: 40px;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.accordion-item .accordion-button {
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    border: none;
+    border: 1px solid #eee;
+    padding: 20px 20px;
+    padding-right: 40px;
+
+    @media #{$md} {
+        padding: 18px 20px;
+        padding-right: 40px;
+
+    }
+
+    @media #{$xs} {
+        padding: 15px 20px;
+        padding-right: 40px;
+
+    }
+
+    .title {
+        font-size: 15px;
+        position: relative;
+        font-weight: 700;
+        float: left;
+        padding-left: 45px;
+        line-height: 25px;
+
+        @media #{$md} {
+            font-size: 14px;
+        }
+
+        @media #{$xs} {
+            font-size: 14px;
+        }
+
+        .serial {
+            color: $black;
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            line-height: 28px;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid #eee;
+            font-size: 14px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+
+    i {
+        font-size: 13px;
+        transition: all 0.3s ease;
+        position: relative;
+        top: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 20px;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: $theme-color;
+    border-color: transparent;
+    border-radius: 8px 8px 0 0;
+
+    .serial {
+        background-color: $white;
+        color: $theme-color;
+        border-color: transparent;
+    }
+
+    i {
+        &::before {
+            content: "\eb2c";
+            font-family: lineIcons;
+        }
+    }
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-collapse {
+    border: none;
+}
+
+.accordion-body {
+    border-radius: 0 0 8px 8px;
+    padding: 40px;
+    background-color: $gray;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
+    @media #{$md} {
+        padding: 30px;
+    }
+
+    @media #{$xs} {
+        padding: 20px;
+    }
+
+    p {
+        margin: 0;
+        margin-bottom: 20px;
+        color: #777;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+}

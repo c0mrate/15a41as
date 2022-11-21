@@ -1,0 +1,65 @@
+/*======================================
+    Features Area CSS
+========================================*/
+.features {
+    background-color: $gray;
+
+    &.style2 {
+        background-color: $white;
+
+        .single-feature {
+            padding: 40px 30px;
+        }
+    }
+
+    .section-title {
+        margin-bottom: 50px;
+
+        @media #{$md} {
+            margin-bottom: 30px;
+        }
+
+        @media #{$xs} {
+            margin-bottom: 20px;
+        }
+    }
+
+    .single-feature {
+        text-align: center;
+        position: relative;
+        margin-top: 30px;
+        padding: 40px;
+        background-color: $white;
+        border: 2px solid #eee;
+        border-radius: 10px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            box-shadow: 0px 10px 30px #00000017;
+            transform: translateY(-5px);
+        }
+
+        i {
+            height: 65px;
+            width: 65px;
+            line-height: 65px;
+            text-align: center;
+            display: inline-block;
+            background-color: $theme-color;
+            color: $white;
+            font-size: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 22px;
+        }
+    }
+}

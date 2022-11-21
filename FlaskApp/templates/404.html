@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Error - ABC Company.</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.svg') }}" />
+    <!-- Place favicon.ico in the root directory -->
+    <!-- {{ url_for('static', filename='jquery.min.js') }} -->
+
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/LineIcons.2.0.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tiny-slider.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/glightbox.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+
+</head>
+
+<body>
+
+    <!-- Start Error Area -->
+    <div class="error-area">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="error-content">
+                        <h1>404</h1>
+                        <h2>Oops! Page Not Found!</h2>
+                        <p>The page you are looking for does not exist.<br> It might have been moved or deleted.</p>
+                        <div class="button">
+                            <a href="/sign-in" class="btn">Back to Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Error Area -->
+
+    <!-- ========================= JS here ========================= -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/count-up.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tiny-slider.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/glightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/imagesloaded.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/isotope.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

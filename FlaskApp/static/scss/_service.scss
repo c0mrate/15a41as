@@ -1,0 +1,389 @@
+/*======================================
+    Servicess CSS
+========================================*/
+.services {
+    background-color: $white;
+
+    .section-title {
+        margin-bottom: 70px;
+    }
+
+    &.style3 {
+        .section-title {
+            margin-bottom: 70px;
+
+            @media #{$md} {
+                margin-bottom: 30px;
+            }
+
+            @media #{$xs} {
+                margin-bottom: 20px;
+            }
+        }
+
+        .single-service {
+            position: relative;
+            text-align: left;
+            padding: 50px;
+            box-shadow: 0px 0px 30px rgba(138, 138, 138, 0.23);
+            border-radius: 5px;
+            border: 1px solid #eee;
+            background-color: $white;
+            overflow: hidden;
+            margin-top: 30px;
+
+            &::before {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 4px;
+                width: 0%;
+                content: "";
+                background-color: $theme-color;
+                transition: all 0.4s ease-in-out;
+            }
+
+            &:hover {
+                box-shadow: 0px 10px 50px rgba(116, 116, 116, 0.23);
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+
+            .serial {
+                font-size: 50px;
+                display: block;
+                margin-bottom: 7px;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-color: $theme-color;
+                font-weight: 800;
+            }
+
+            &:hover {
+                .serial {
+                    -webkit-text-stroke-color: transparent;
+                    -webkit-text-fill-color: $theme-color;
+                }
+            }
+
+            .button {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.services .single-head {
+    position: relative;
+}
+
+.single-service {
+    padding: 50px 40px;
+    background-color: $gray;
+    border-radius: 10px;
+    text-align: center;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    border: 1px dashed $theme-color;
+
+    &:hover {
+        box-shadow: 0 32px 54px 0 rgba(22, 28, 45, .16);
+        background-color: $white;
+    }
+
+    h3 {
+        line-height: 28px;
+    }
+
+    h3 a {
+        color: $black;
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: capitalize;
+    }
+
+    h3 a:hover {
+        color: $theme-color;
+    }
+
+    .icon {
+        margin-top: 25px;
+
+        i {
+            font-size: 32px;
+            color: $theme-color;
+        }
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: 600;
+        color: #888;
+        line-height: 28px;
+        margin-top: 25px;
+    }
+
+}
+
+/* Service Details */
+.service-details {
+    .content {
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .thumb {
+            margin-bottom: 40px;
+
+            @media #{$md} {
+                margin-bottom: 30px;
+            }
+
+            @media #{$xs} {
+                margin-bottom: 25px;
+            }
+        }
+
+        .title {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+
+            @media #{$xs} {
+                font-size: 22px;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+            }
+        }
+
+        .sub-title {
+            font-size: 22px;
+            font-weight: 800;
+            margin: 25px 0;
+        }
+
+        p {
+            display: block;
+            margin: 20px 0;
+            line-height: 24px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .list {
+            margin: 40px 0;
+            padding-left: 30px;
+
+            li {
+                display: block;
+                margin-bottom: 15px;
+                position: relative;
+                padding-left: 32px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                i {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    color: #fff;
+                    font-size: 7px;
+                    height: 18px;
+                    width: 18px;
+                    background: #473BF0;
+                    text-align: center;
+                    line-height: 18px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+.extra-page {
+    padding-bottom: 70px;
+
+    .single-service {
+        margin-bottom: 30px;
+    }
+}
+
+/* Service Sidebar */
+.service-sidebar {
+    @media #{$md} {
+        margin-top: 35px;
+    }
+
+    @media #{$xs} {
+        margin-top: 35px;
+    }
+
+    .single-widget {
+        margin-bottom: 30px;
+        position: relative;
+        padding: 40px;
+        border-radius: 5px;
+        background-color: $gray;
+
+        @media #{$xs} {
+            padding: 30px;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 800;
+            color: $black;
+            margin-bottom: 30px;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    .search-widget {
+        position: relative;
+    }
+
+    .search-widget form {
+        position: relative;
+    }
+
+    .search-widget form input {
+        width: 100%;
+        background-color: transparent;
+        height: 55px;
+        border: none;
+        padding: 0 70px 0 20px;
+        font-size: 15px;
+        font-weight: 500;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        background-color: $white;
+        color: $black;
+    }
+
+    .search-widget form input::placeholder {
+        color: #333;
+    }
+
+    .search-widget form button {
+        position: absolute;
+        right: 9px;
+        top: 50%;
+        width: 40px;
+        height: 38px;
+        z-index: 1;
+        color: #fff !important;
+        font-size: 16px;
+        -webkit-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        color: #fff;
+        border-radius: 5px;
+        padding: 0 !important;
+        border: none;
+        margin-top: -19px;
+        background: $theme-color;
+
+        &:hover {
+            background-color: $black;
+            color: $white;
+        }
+    }
+
+    .service-category {
+
+        li {
+            display: block;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                padding: 15px 20px;
+                background-color: $white;
+                color: $black;
+                font-weight: 500;
+                display: block;
+                border-radius: 5px;
+                border: 1px solid #eee;
+                position: relative;
+                padding-right: 40px;
+
+                i {
+                    float: right;
+                    font-size: 17px;
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    height: 18px;
+                    top: 50%;
+                    margin-top: -9px;
+                }
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+
+    .download {
+        background-color: $gray;
+        padding: 35px;
+        border: 1px solid #eee;
+        border-radius: 5px;
+
+        li {
+            display: block;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                padding: 15px 20px;
+                background-color: $white;
+                color: $black;
+                font-weight: 500;
+                display: block;
+                border-radius: 5px;
+                border: 1px solid #eee;
+                position: relative;
+                padding-right: 40px;
+
+                i {
+                    float: right;
+                    font-size: 17px;
+                    position: absolute;
+                    top: 0;
+                    right: 20px;
+                    height: 18px;
+                    top: 50%;
+                    margin-top: -9px;
+                }
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+}

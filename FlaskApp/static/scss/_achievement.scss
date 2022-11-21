@@ -1,0 +1,77 @@
+/*======================================
+    Our Achievement CSS
+========================================*/
+
+.our-achievement {
+    background-color: $black;
+    text-align: center;
+    padding: 120px 0;
+    padding-top: 80px;
+
+    @media #{$md} {
+        padding: 80px 0;
+    }
+
+    @media #{$xs} {
+        padding: 60px 0;
+    }
+
+    .single-achievement {
+        margin-top: 40px;
+        text-align: center;
+        padding: 0px 10px;
+
+        .achievement-icon {
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            line-height: 60px;
+            background-color: $white;
+            color: $theme-color;
+            border-radius: 10px;
+            font-size: 22px;
+            display: inline-block;
+            margin-bottom: 30px;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+        }
+
+        &:hover {
+            .achievement-icon {
+                box-shadow: 0px 10px 30px #00000017;
+                transform: translateY(-5px);
+            }
+        }
+
+        h3 {
+            font-size: 35px;
+            font-weight: 800;
+            display: block;
+            margin-bottom: 8px;
+            color: $white;
+        }
+
+        p {
+            font-size: 16px;
+            color: $white;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+    }
+
+    @media #{$md, $xs} {
+        .title {
+            h2 {
+                font-size: 24px;
+                line-height: 32px;
+            }
+        }
+
+        .single-achievement {
+            margin-top: 30px;
+
+            h3 {
+                font-size: 28px;
+            }
+        }
+    }
+}

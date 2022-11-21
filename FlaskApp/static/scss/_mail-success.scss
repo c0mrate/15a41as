@@ -1,0 +1,82 @@
+/*======================================
+	Mail Success CSS
+========================================*/
+
+.maill-success {
+    height: 100vh;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.d-table {
+    width: 100%;
+    height: 100%;
+}
+
+.d-table {
+    display: table !important;
+}
+
+.d-table-cell {
+    vertical-align: middle;
+}
+
+.d-table-cell {
+    display: table-cell !important;
+}
+
+.maill-success .success-content {
+    i {
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: $theme-color;
+    }
+
+    h1 {
+        font-size: 40px;
+        color: $theme-color;
+        margin-bottom: 20px;
+        font-weight: 800;
+
+        @media #{$md} {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        @media #{$xs} {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        color: $black;
+        font-weight: 800;
+
+        @media #{$md} {
+            font-size: 17px;
+        }
+
+        @media #{$xs} {
+            font-size: 17px;
+        }
+    }
+
+    p {
+        font-weight: 600;
+        margin-bottom: 40px;
+        color: #888;
+        font-size: 16px;
+        line-height: 28px;
+
+        @media #{$xs} {
+            font-size: 15px;
+            line-height: 26px;
+        }
+
+    }
+}

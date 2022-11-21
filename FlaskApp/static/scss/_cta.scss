@@ -1,0 +1,238 @@
+/*======================================
+    Call To Action CSS
+========================================*/
+.call-action {
+    padding: 80px 0;
+    background-color: $gray;
+
+    &.style2 {
+        background-color: $white;
+        padding: 120px 0;
+        text-align: center;
+
+        @media #{$md} {
+            padding: 70px 0;
+        }
+
+        @media #{$xs} {
+            padding: 60px 0;
+        }
+
+        &.mobile-app {
+            .download-link {
+                li {
+                    a {
+                        width: 250px;
+                    }
+                }
+            }
+        }
+
+        .title {
+            h3 {
+                font-size: 35px;
+                font-weight: 800;
+
+                @media #{$md} {
+                    font-size: 30px;
+                }
+
+                @media #{$xs} {
+                    font-size: 24px;
+                }
+
+                span {
+                    color: $theme-color;
+                    font-size: 15px;
+                    font-weight: 600;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 28px;
+                margin-top: 20px;
+
+                @media #{$md} {
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+
+                @media #{$xs} {
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        .download-link {
+            margin-top: 50px;
+
+            @media #{$md} {
+                margin-top: 40px;
+            }
+
+            @media #{$xs} {
+                margin-top: 30px;
+            }
+
+            li {
+                display: block;
+                margin-bottom: 20px;
+
+                @media #{$xs} {
+                    margin-bottom: 12px;
+                }
+
+
+                &:last-child {
+                    margin: 0;
+                }
+
+                a {
+                    width: 300px;
+                    color: $white;
+                    font-size: 20px;
+                    position: relative;
+                    padding: 15px 20px;
+                    border-radius: 10px;
+                    padding-left: 80px;
+                    background-color: $theme-color;
+                    text-align: left;
+
+
+                    @media #{$md} {
+                        width: 270px;
+
+                        .main-text {
+                            font-size: 14px !important;
+                        }
+
+                        .sub-text {
+                            font-size: 13px !important;
+                        }
+
+                        i {
+                            font-size: 25px !important;
+                        }
+                    }
+
+                    @media #{$xs} {
+                        width: 80%;
+                        padding: 15px 20px;
+                        padding-left: 70px;
+
+                        .main-text {
+                            font-size: 14px !important;
+                        }
+
+                        .sub-text {
+                            font-size: 13px !important;
+                        }
+
+                        i {
+                            font-size: 22px !important;
+                        }
+                    }
+
+                    &:hover {
+                        color: $white;
+                        background-color: $black;
+                    }
+
+                    &.alt {
+                        background-color: $black;
+                        color: $white;
+
+                        &:hover {
+                            color: $white;
+                            background-color: $theme-color;
+                        }
+
+                        i {
+                            color: $white;
+                        }
+
+                        .main-text {
+                            color: $white;
+                        }
+
+                        .sub-text {
+                            color: $white;
+                        }
+                    }
+
+                    i {
+                        position: absolute;
+                        left: 30px;
+                        top: 50%;
+                        font-size: 28px;
+                        transform: translateY(-50%);
+                    }
+
+                    .main-text {
+                        font-size: 15px;
+                        font-weight: 700;
+                        display: block;
+                    }
+
+                    .sub-text {
+                        font-size: 14px;
+                        display: block;
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media #{$md} {
+        padding: 60px 0;
+        text-align: center;
+    }
+
+    @media #{$xs} {
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .text {
+        h2 {
+            font-size: 35px;
+            font-weight: 800;
+            line-height: 45px;
+
+            @media #{$md} {
+                font-size: 28px;
+                line-height: 34px;
+            }
+
+            @media #{$xs} {
+                font-size: 22px;
+                line-height: 32px;
+            }
+
+            span {
+                display: block;
+                color: $theme-color;
+            }
+        }
+    }
+
+    .button {
+        float: right;
+
+        @media #{$md} {
+            float: none;
+            margin-top: 30px;
+        }
+
+        @media #{$xs} {
+            float: none;
+            margin-top: 25px;
+        }
+    }
+}

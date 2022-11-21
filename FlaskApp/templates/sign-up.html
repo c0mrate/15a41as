@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Registration- ABC Company.</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.svg') }}" />
+    <!-- Place favicon.ico in the root directory -->
+    <!-- {{ url_for('static', filename='jquery.min.js') }} -->
+
+    <!-- Web Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/LineIcons.2.0.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tiny-slider.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/glightbox.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+
+</head>
+
+<body>
+
+    <!-- start Registration section -->
+    <section class="login registration section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12">
+                    <div class="form-head">
+                        <h4 class="title">Registration</h4>
+                        <form action="/validate-sign-up" method="post">
+                            <div class="socila-login">
+                                <ul>
+                                    <li><a href="javascript:void(0)" class="facebook"><i
+                                            class="lni lni-facebook-original"></i>Import
+                                        From Facebook</a></li>
+                                    <li><a href="javascript:void(0)" class="google"><i class="lni lni-google"></i>Import
+                                        From Google
+                                        Plus</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="alt-option">
+                                <span>Or</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input name="fname" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label>Username/Email</label>
+                                <input name="user" type="email">
+                            </div>
+                            <div class="form-group">
+                                <label>Password</label>
+                                <input name="password" type="password">
+                            </div>
+                            <div class="form-group">
+                                <label>Confirm Password</label>
+                                <input name="cfpassword" type="password">
+                            </div>
+                            <div class="check-and-pass">
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input width-auto" id="exampleCheck1">
+                                            <label class="form-check-label">Agree to our <a
+                                                href="javascript:void(0)">Terms and
+                                                Conditions</a></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button type="submit" class="btn">Registration</button>
+                            </div>
+                            <p class="outer-link">Already have an account? <a href="/sign-in"> Login Now</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Registration section -->
+
+    <!-- ========================= JS here ========================= -->
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/count-up.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/tiny-slider.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/glightbox.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/imagesloaded.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/isotope.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>

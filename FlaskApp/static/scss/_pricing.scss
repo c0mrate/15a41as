@@ -1,0 +1,104 @@
+/*=============================
+	Pricing Table CSS
+===============================*/
+.pricing-table {
+    background-color: $gray;
+
+    .section-title {
+        margin-bottom: 50px;
+
+        @media #{$md} {
+            margin-bottom: 30px;
+        }
+
+        @media #{$xs} {
+            margin-bottom: 20px;
+        }
+    }
+
+    .single-table {
+        border: 1px solid #eee;
+        border-radius: 10px;
+        margin-top: 30px;
+        background-color: $white;
+        transition: all 0.4s ease;
+
+        &:hover {
+            box-shadow: 0px 10px 30px #00000017;
+            transform: translateY(-5px);
+        }
+
+        .table-head {
+            padding: 40px;
+            border-bottom: 1px solid #eee;
+
+            .title {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-weight: 400;
+            }
+
+            .price {
+                padding-top: 20px;
+
+                .amount {
+                    font-size: 35px;
+                    font-weight: 800;
+                    display: inline-block;
+
+                    .duration {
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #888;
+                        font-weight: 400;
+                        margin-left: 3px;
+                    }
+                }
+            }
+
+        }
+
+        .table-content {
+            padding: 40px;
+
+            .table-list {
+                li {
+                    position: relative;
+                    padding-left: 25px;
+                    font-size: 14px;
+                    margin-bottom: 13px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    i {
+                        color: $theme-color;
+                        font-size: 14px;
+                        position: absolute;
+                        left: 0;
+                        top: 4px;
+                    }
+                }
+            }
+
+            .button {
+                margin-top: 40px;
+
+                .btn {
+                    width: 100%;
+                    background-color: $black;
+
+                    &:hover {
+                        background-color: $theme-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

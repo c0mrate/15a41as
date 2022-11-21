@@ -1,0 +1,172 @@
+/*======================================
+    App Info CSS
+========================================*/
+.app-info {
+    &.mobile-app {
+        padding-bottom: 0;
+
+        @media #{$xs} {
+            padding: 0 !important;
+        }
+
+        .info-one {
+            padding: 0;
+
+            &.style2 {
+                margin-top: 0 !important;
+            }
+
+            .info-image {
+
+                @media #{$md} {
+                    padding: 0 200px !important;
+                }
+
+                @media #{$xs} {
+                    padding-top: 0;
+                }
+
+            }
+
+            .info-text {
+                padding: 60px;
+
+                @media #{$md} {
+                    padding: 60px !important;
+                }
+
+                @media #{$xs} {
+                    padding: 60px 30px !important;
+                }
+            }
+        }
+
+    }
+
+    .info-one {
+        position: relative;
+
+        .info-image {
+            padding: 0 50px;
+
+            @media #{$md} {
+                padding-top: 60px;
+            }
+
+            @media #{$xs} {
+                padding-top: 50px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &.style2 {
+            padding-top: 100px;
+            margin-top: 100px;
+            border-top: 1px solid #eee;
+
+            @media #{$md} {
+                padding-top: 60px;
+                margin-top: 60px;
+            }
+
+            @media #{$xs} {
+                padding-top: 50px;
+                margin-top: 50px;
+            }
+
+            .info-text {
+
+                @media #{$md} {
+                    padding-top: 60px !important;
+                }
+
+                @media #{$xs} {
+                    padding-top: 50px !important;
+                }
+            }
+
+            .info-image {
+                @media #{$md} {
+                    padding-top: 0;
+                }
+
+                @media #{$xs} {
+                    padding-top: 0;
+                }
+            }
+
+            @media #{$md} {
+                padding-top: 60px;
+            }
+
+            @media #{$xs} {
+                padding-top: 50px;
+            }
+
+            .info-text {
+
+                @media #{$md} {
+                    padding: 0;
+                }
+
+                @media #{$xs} {
+                    padding: 0;
+                }
+            }
+        }
+
+        .info-text {
+            padding: 0 60px;
+
+            @media #{$md} {
+                padding: 0 40px;
+            }
+
+            @media #{$xs} {
+                padding: 0;
+            }
+
+            .main-icon {
+                height: 60px;
+                width: 60px;
+                line-height: 60px;
+                text-align: center;
+                display: block;
+                border-radius: 8px;
+                color: $white;
+                font-size: 20px;
+                background-color: $theme-color;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                font-size: 35px;
+                font-weight: 800;
+                margin-bottom: 20px;
+                color: $black;
+                line-height: 42px;
+
+                @media #{$md} {
+                    font-size: 25px;
+                    line-height: 38px;
+                }
+
+                @media #{$xs} {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+
+            p {
+                margin-bottom: 15px;
+            }
+
+            .button {
+                margin-top: 35px;
+            }
+        }
+    }
+}

@@ -1,0 +1,140 @@
+/*======================================
+    About Area CSS
+========================================*/
+.about {
+    background-color: $gray;
+    z-index: 2;
+
+    .image {
+        position: relative;
+
+        .img2 {
+
+            position: absolute;
+            background: $theme-color;
+            border-radius: 10px;
+            height: 96.8%;
+            width: 82%;
+            bottom: 0;
+            left: 0px;
+            z-index: -1;
+        }
+
+        .main-image {
+            z-index: 2;
+        }
+    }
+
+    .content {
+        padding: 0 40px 0 70px;
+
+        @media #{$md} {
+            padding: 0;
+            margin-top: 40px;
+        }
+
+        @media #{$xs} {
+            padding: 0;
+            margin-top: 40px;
+        }
+
+        .heading {
+
+            h2 {
+                font-size: 38px;
+                font-weight: 800;
+                line-height: 48px;
+                margin-bottom: 25px;
+
+                @media #{$md} {
+                    font-size: 30px;
+                    font-weight: 800;
+                    line-height: 38px;
+                    margin-bottom: 20px;
+                }
+
+                @media #{$xs} {
+                    font-size: 22px;
+                    font-weight: 800;
+                    line-height: 32px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            p {
+                font-weight: 600;
+                line-height: 30px;
+                font-size: 16px;
+
+                @media #{$xs} {
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+
+            }
+        }
+
+
+        .list {
+            margin-top: 60px;
+
+            @media #{$md} {
+                margin-top: 40px;
+            }
+
+            @media #{$xs} {
+                margin-top: 30px;
+            }
+
+            .single-list {
+                position: relative;
+                padding: 40px;
+                background-color: $white;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                padding-left: 105px;
+                transition: all 0.4s ease;
+                border-left: 5px solid transparent;
+
+                @media #{$xs} {
+                    padding-left: 95px;
+                }
+
+                &:hover {
+                    border-color: $theme-color;
+                    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.068);
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                i {
+                    height: 50px;
+                    width: 50px;
+                    line-height: 50px;
+                    color: $theme-color;
+                    background-color: $gray;
+                    border-radius: 50%;
+                    position: absolute;
+                    font-size: 20px;
+                    left: 35px;
+                    top: 40px;
+                    text-align: center;
+
+                    @media #{$xs} {
+                        left: 25px;
+                    }
+
+                }
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: 800;
+                    display: block;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
